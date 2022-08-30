@@ -1,6 +1,6 @@
 //Maya ASCII 2022 scene
 //Name: Ball.ma
-//Last modified: Tue, Aug 30, 2022 12:06:17 PM
+//Last modified: Tue, Aug 30, 2022 12:15:04 PM
 //Codeset: UTF-8
 requires maya "2022";
 requires "mtoa" "4.2.1";
@@ -10,7 +10,7 @@ fileInfo "product" "Maya 2022";
 fileInfo "version" "2022";
 fileInfo "cutIdentifier" "202102181415-29bfc1879c";
 fileInfo "osv" "Mac OS X 10.16";
-fileInfo "UUID" "B42AD329-6047-EDB0-B474-18A925431556";
+fileInfo "UUID" "16356F41-8849-F222-58DF-FB9AFECF49D3";
 createNode transform -s -n "persp";
 	rename -uid "BC866A97-DE49-6A4C-B48D-13903A55FB42";
 	setAttr ".v" no;
@@ -78,6 +78,8 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode transform -n "pSphere1";
 	rename -uid "8CFC4C21-854A-F06E-6B97-389F4B589920";
+	setAttr ".t" -type "double3" 0 2.9352200867821674 0 ;
+	setAttr ".s" -type "double3" 3.0588370638099538 3.0588370638099538 3.0588370638099538 ;
 createNode mesh -n "pSphereShape1" -p "pSphere1";
 	rename -uid "F2DC0A7F-E249-DF54-D228-75ABE5D4220C";
 	setAttr -k off ".v";
